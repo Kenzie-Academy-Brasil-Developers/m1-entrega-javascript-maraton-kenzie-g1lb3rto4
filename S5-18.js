@@ -1,16 +1,22 @@
-let participantes = [" Rafael", " Manoel", "Daniel"]
+let nomes = [" Rafael", " Manoel", " Daniel"]
 
-function positions(nome){
-        for(let i = 0; i < participantes.length; i++){
-            if(participantes[2] != 0){
-                participantes.reverse()
-            }
-            else{
-                return "'Daniel é o vencedor'"
-            }
-        }
-        
-        return participantes
+function positions(){
+    for(let i = 0; i < nomes.length; i++){
+       if(nomes){
+        nomes[1] = " Daniel"
+        nomes[2] = " Manoel"
+       }
     }
-console.log(`Este é o pódio ${positions(participantes)}`)
+    if(nomes){
+        nomes[0] = " Daniel"
+        nomes[1] = " Rafael"
+    }
+    else{
+        'Daniel é o vencedor'
+    }
+    return `Este é o pódio${nomes}`
+}
+console.log(positions())
+
+
 
